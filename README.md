@@ -68,3 +68,23 @@ Data Source: LoanStats_2019Q1.csv
 
 
 ## Summary
+Results of the machine learning models: ***High Risk***
+| ML Model | Balance Accuracy Score | Precision | Recall | F1 |
+| :---         |     :---:      |     :---:      |      :---:      |       ---: |
+| Oversampling   | 0.64 | 0.01 | 0.66 | 0.02 |
+| SMOTE    | 0.65 | 0.01 | 0.61 | 0.02 |
+| Undersampling   | 0.54 | 0.01 | 0.69 | 0.01 |
+| SMOTEENN    | 0.65 | 0.01 | 0.72 | 0.02 |
+| Balanced Random Forest Classifier | 0.79 | 0.03 | 0.70 | 0.06 |
+| Easy Ensemble AdaBoost Classifier | 0.93 | 0.09 | 0.92 | 0.16 |
+
+
+Various techniques have been tried to handle class imbalance in a data set. The table above shows the results of the model for *high risk*, it can be observed, a relatively low accuracy when it comes to predicting high risk applicants. The highest one was the *Easy Ensemble AdaBoost Classifier* with 9% precision. This means that out of all the customers marked as *high risk* 9% were actually *high risk*.  
+
+If our objective were to minimize company/banks loss, a good recall rate is desirable because we want to identify the maximum amount of clients that are indeed prone to stop paying their debts, in other words banks want to be able to mark all of the *high risk* clients as *high risk*. The highest recall when it comes to our data is when we run the *Easy Ensemble Adaboost Classifier* with a sensitivity of 92% which is pretty close to almost perfectly classifying the high-risk applicants. 
+
+A low precision and high recall in the results means that the model detects the class well but also includes samples of other classes, and this also means that many people who were actually low risks were predicted hish risks and therfore might have been rejected.
+
+In general observation, I cannot recommend using any of these models for the bank to use when determining *high risk* applicants due to the low F1-score rate we see throughout the analysis.  
+
+
