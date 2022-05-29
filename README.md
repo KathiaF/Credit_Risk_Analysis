@@ -1,7 +1,10 @@
 # Credit Risk Analysis
-Challenge Module 17
+Challenge Module 17: Supervised Machine Learning and Credit Risk
+
 
 ## Project Overview
+The number of credit cards issued by commercial banks is increasing and because of that customer credits risk issues receiver more attention and the concept of risk gives you a logical way to make the decision about whether or not to lend people the money. Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, it is necessary to employ different techniques to train and evaluate models with unbalanced classes and because of this, the purpose of this project is to build, analyze and evaluate several machine learning models to predict credit card risk using the *imbalanced-learn* and s*cikit-learn* libraries to build and evaluate models using resampling.
+
 
 ## Resources
 Data Source: LoanStats_2019Q1.csv
@@ -62,3 +65,6 @@ Data Source: LoanStats_2019Q1.csv
 
 - Print out the imbalanced classification report.
 <img src="/Resources/d3_icr2.png" width="50%" height="50%">
+
+
+## Summary
