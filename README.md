@@ -10,7 +10,6 @@ Data Source: LoanStats_2019Q1.csv
 
 ## Results
 ### Deliverable 1: Use Resampling Models to Predict Credit Risk
-
 **Naive Random Oversampling**
 - Balance accuracy score: 0.6403
 - Generate a confusion matrix
@@ -35,10 +34,31 @@ Data Source: LoanStats_2019Q1.csv
 - Print out the imbalanced classification report.
 <img src="/Resources/d1_icr3.png" width="50%" height="50%">
 
+------------------------------------------------------------------------------------------------------------------
+### Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
 **Combination (Over and Under) Sampling**
 - Balance accuracy score: 0.6449
 - Generate a confusion matrix
-<img src="/Resources/d1_cm4.png" width="30%" height="30%">
+<img src="/Resources/d2_cm1.png" width="30%" height="30%">
 
 - Print out the imbalanced classification report.
-<img src="/Resources/d1_icr4.png" width="50%" height="50%">
+<img src="/Resources/d2_icr1.png" width="50%" height="50%">
+
+
+------------------------------------------------------------------------------------------------------------------
+### Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+**Balanced Random Forest Classifier**
+- Balance accuracy score: 0.7885
+- Generate a confusion matrix
+<img src="/Resources/d3_cm1.png" width="30%" height="30%">
+
+- Print out the imbalanced classification report.
+<img src="/Resources/d3_icr1.png" width="50%" height="50%">
+
+**Easy Ensemble AdaBoost Classifier**
+- Balance accuracy score: 0.9317
+- Generate a confusion matrix
+<img src="/Resources/d3_cm2.png" width="30%" height="30%">
+
+- Print out the imbalanced classification report.
+<img src="/Resources/d3_icr2.png" width="50%" height="50%">
