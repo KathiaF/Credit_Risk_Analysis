@@ -85,5 +85,5 @@ If our objective were to minimize company/banks loss, a good recall rate is desi
 
 A low precision and high recall in the results means that the model detects the class well but also includes samples of other classes, and this also means that many people who were actually low risks were predicted hish risks and therfore might have been rejected.
 
-In general observation, I cannot recommend using any of these models for the bank to use when determining *high risk* applicants due to the low F1-score rate we see throughout the analysis.  
+In general observation, I cannot recommend using any of these models for the bank to use when determining *high risk* applicants due to the low F1-score rate we see throughout the analysis. However, if the company insisted that it would be necessary to choose one, I would recommend the *Easy Ensemble Adaboost Classifier* , due to the *Balance Accuracy Score* (93%), because the accuracy score stands for how correct was the model with it's intended classification.
 
