@@ -87,5 +87,3 @@ A low precision and high recall in the results means that the model detects the 
 
 In general observation, I cannot recommend using any of these models for the bank to use when determining *high risk* applicants due to the low F1-score rate we see throughout the analysis.  
 
-
-
